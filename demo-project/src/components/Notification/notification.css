@@ -1,0 +1,92 @@
+
+
+.cards {
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    max-width: 450px;
+    background-color: #fff;
+    margin-left: -50px;
+    box-shadow: none;
+    
+}
+
+.heading {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px;
+    color: #424242;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.heading .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3896bb;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.notification-list {
+    padding: 10px 15px;
+}
+
+
+.notification-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    margin-left: -8px; /* Adjust this value to move the card left */
+}
+
+.notification-card:hover {
+    background-color: #e0f7fa;
+    margin-left: -15px; /* You can also change this to create a hover effect */
+}
+
+
+/* .notification-card:hover {
+    background-color: #e0f7fa;
+} */
+
+.notification-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-content .title {
+    font-weight: 600;
+    color: #212121;
+}
+
+.notification-content p {
+    margin: 5px 0 0;
+    color: #757575;
+    font-size: 0.9rem;
+}
+
+.circle-icons {
+    font-size: 1rem;
+    color: #3485ee;
+    margin-left: 5px;
+}
+
+.toggle-link {
+    cursor: pointer;
+    color: #3485ee;
+    font-weight: 500;
+    margin-left: 5px;
+}

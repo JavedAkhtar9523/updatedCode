@@ -1,0 +1,157 @@
+
+
+header {
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    height: 80px;
+}
+
+.logo {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+
+
+.search-box {
+    position: relative;
+    flex-grow: 1;
+    max-width: 450px;
+}
+
+.search-box form {
+    display: flex;
+    align-items: center;
+    /* background: linear-gradient(145deg, #e4e7eb, #f7f8fa); */
+    /* border-radius: 25px; */
+    padding: 0.5rem 1rem;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    height: 45px;
+    position: relative;
+}
+
+/* .search-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    padding-left: 2.5rem;
+    border-radius: 50%;
+    margin-top: 15px;
+} */
+.search-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    font-size: 1rem;
+    color: #007bff;
+}
+
+
+.search-input::placeholder {
+    color: #888;
+    font-size: 0.9rem;
+    
+}
+
+
+
+.search-box-card {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+    padding: 0.5rem;
+}
+
+.search-box-card a {
+    display: block;
+    padding: 0.5rem;
+    border-bottom: 1px solid #f1f1f1;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.search-box-card a:hover {
+    background-color: #f7f8fa;
+}
+
+.search-box-card p {
+    margin: 0;
+    padding: 0.5rem;
+    color: #888;
+}
+
+
+.left-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+.icon {
+    font-size: 1.8rem;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #007bff;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.notification-page {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    width: 350px;
+    padding: 1rem;
+}
+
+.rounded-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
