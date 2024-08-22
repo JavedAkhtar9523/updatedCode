@@ -7,6 +7,13 @@ import { BiSolidLike } from "react-icons/bi";
 import TimeAgo from "react-timeago";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import "./PostHome.css";
+import {
+  FaHeart,
+  FaRegHeart,
+  FaRegComment,
+  FaRegPaperPlane,
+} from "react-icons/fa";
 import {
   likePost,
   restLikePost,
@@ -164,7 +171,7 @@ function PostHome({ posts }) {
           </div>
         )}
 
-        <div className="d-flex justify-content-between align-items-center mt-1 p-1">
+        {/* <div className="d-flex justify-content-between align-items-center mt-1 p-1">
           <div className="d-flex gap-1 align-items-center">
             {isLiked ? (
               <GoHeartFill style={{ color: "red" }} onClick={handleLike} />
@@ -188,9 +195,9 @@ function PostHome({ posts }) {
             <span className="text-muted text-small">1 share</span>
           </div>
         </div>
-        <hr />
+        <hr /> */}
         <div className="d-flex justify-content-between align-items-center p-2">
-          <div>
+          {/* <div>
             {isLiked ? (
               <BiSolidLike onClick={handleLike} className="fs-5" />
             ) : (
@@ -208,6 +215,30 @@ function PostHome({ posts }) {
             <MdShare onClick={handleShare} className="fs-5" />
             <span className="text-muted fs-6">Share</span>
           </div>
+        </div> */}
+          <div className="post-actions">
+            <button
+              className={`action-btn like-btn ${isLiked ? "liked" : ""}`}
+              onClick={handleLike}
+            >
+              {isLiked ? <FaHeart /> : <FaRegHeart />}
+              <span className="action-count">{posts?.likes.length}</span>
+            </button>
+
+            <button
+              className="action-btn comment-btn"
+              onClick={() => setCommentBox(!commentBox)}
+            >
+              <FaRegComment />
+              <span className="action-count">{posts?.comments?.length}</span>
+            </button>
+
+            <button className="action-btn share-btn" onClick={handleShare}>
+              <FaRegPaperPlane />
+            </button>
+          </div>
+
+          {commentBox && <CreateComent postId={posts?._id} />}
         </div>
       </div>
       {commentBox && <CreateComent postId={posts?._id} />}

@@ -1,0 +1,55 @@
+.post-actions {
+    display: flex;
+    padding: 8px 0;
+    border-top: 1px solid #efefef;
+  }
+  
+  .action-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #262626;
+  }
+  
+  .action-btn:hover {
+    opacity: 0.7;
+  }
+  
+  .action-btn svg {
+    margin-right: 4px;
+  }
+  
+  .action-count {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-left: 4px;
+  }
+  
+  .like-btn.liked {
+    color: #ed4956;
+  }
+  
+  .like-btn.liked svg {
+    animation: likeAnimation 0.45s ease-in-out;
+    transform: scale(1);
+  }
+  
+  @keyframes likeAnimation {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+  
+  .comment-btn, .share-btn {
+    margin-left: 16px;
+  }
+  
+  /* Optional: Add a subtle background on hover */
+  .action-btn:hover {
+    background-color: #fafafa;
+    border-radius: 4px;
+  }
