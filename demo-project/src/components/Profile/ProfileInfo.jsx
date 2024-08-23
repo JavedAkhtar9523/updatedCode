@@ -194,15 +194,13 @@ const ProfileInfo = () => {
                 : "N/A"}
             </h5>
             <div className="stats-data">
-              <p>Average Views: {user?.averageViews || "N/A"}</p>
-              <p>Average Likes: {user?.averageLikes || "N/A"}</p>
-              <p>Recent Visits: {user?.recentVisits || "N/A"}</p>
-              <p>Search Appearances: {user?.searchAppearances || "N/A"}</p>
-              <p>Total Time Spent: {user?.totalTimeSpent || "N/A"}</p>
-              <p>
-                Opportunities Applied: {user?.opportunitiesApplied || "N/A"}
-              </p>
-              <p>Opportunities Won: {user?.opportunitiesWon || "N/A"}</p>
+              <p>Average Views: {user?.averageViews || "0"}</p>
+              <p>Average Likes: {user?.averageLikes || "0"}</p>
+              <p>Recent Visits: {user?.recentVisits || "0"}</p>
+              <p>Search Appearances: {user?.searchAppearances || "0"}</p>
+              <p>Total Time Spent: {user?.totalTimeSpent || "0"}</p>
+              <p>Opportunities Applied: {user?.opportunitiesApplied || "0"}</p>
+              <p>Opportunities Won: {user?.opportunitiesWon || "0"}</p>
             </div>
           </div>
           <button className="share-button">Share</button>

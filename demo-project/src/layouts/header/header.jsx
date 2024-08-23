@@ -208,13 +208,13 @@ const Header = ({ toggleOpen }) => {
         </div>
         <div className="search-box" ref={searchBoxRef}>
           <form className="d-flex position-relative">
-            <span className="search-icon bi bi-search"></span>
+            <span className="search-icon1 bi bi-search"></span>
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search..."
-              className="search-input"
+              className="search-input1"
               style={{ paddingLeft: "22px" }}
             />
           </form>

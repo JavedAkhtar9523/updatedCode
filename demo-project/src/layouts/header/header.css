@@ -47,28 +47,30 @@ header {
     border-radius: 50%;
     margin-top: 15px;
 } */
-.search-input {
+.search-input1 {
     background-color: transparent;
-    border: none;
+    border: 1px solid gray;
     outline: none;
+    position: relative;
     width: 100%;
     font-family: 'Arial', sans-serif;
     color: #333;
     font-size: 1rem;
-    border-radius: 50%;
-    margin-top: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 22px;
 }
 
-.search-icon {
+.search-icon1 {
     position: absolute;
     left: 18px;
-    top: 12px;
+    top: 16px;
     font-size: 1rem;
     color: #007bff;
 }
 
 
-.search-input::placeholder {
+.search-input1::placeholder {
     color: #888;
     font-size: 0.9rem;
     

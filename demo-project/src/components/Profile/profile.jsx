@@ -49,15 +49,13 @@ const featuredPosts = [
   },
   {
     category: "nature",
-    description:
-      "World sustainable environment concept design.Green earth for Environment Social and Governance. Solving environmental, social and management problems with figure icons.",
+    description: "World sustainable environment concept.",
     image:
       "https://media.istockphoto.com/id/1398025593/vector/world-sustainable-environment-concept-design.jpg?s=1024x1024&w=is&k=20&c=07Rm_FWBJKy0BiZFhc3WX3WSU8HcQwogZKiz2eLEq-A=",
   },
   {
     category: "nature",
-    description:
-      "World sustainable environment concept design.Green earth for Environment Social and Governance. Solving environmental, social and management problems with figure icons.",
+    description: "World sustainable environment concept.",
     image:
       "https://media.istockphoto.com/id/1398025593/vector/world-sustainable-environment-concept-design.jpg?s=1024x1024&w=is&k=20&c=07Rm_FWBJKy0BiZFhc3WX3WSU8HcQwogZKiz2eLEq-A=",
   },
@@ -208,13 +206,13 @@ const Profile = ({ scrollableContentRef }) => {
                     </div>
                     <span
                       className="badge text-bg-light fw-light"
-                      style={{ fontSize: "0.6rem", marginRight: "80px" }}
+                      style={{ fontSize: "0.6rem", marginRight: "120px" }}
                     >
                       {user?.email}
                     </span>
                     <span
                       className="badge text-bg-light mt-2 fw-light"
-                      style={{ fontSize: "0.6rem", marginRight: "80px" }}
+                      style={{ fontSize: "0.6rem", marginRight: "90px" }}
                     >
                       {user?.username}
                     </span>

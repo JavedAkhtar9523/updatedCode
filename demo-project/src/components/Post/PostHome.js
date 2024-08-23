@@ -23,11 +23,14 @@ import CreateComent from "./Comment/CreateComent.jsx";
 import ColonCard from "./ColonCard";
 import { useOutsideClick } from "../../utlis/useOutsideClick.js";
 import { toast } from "react-toastify";
+// import Comment from "./Comment";
 
 function PostHome({ posts }) {
   const [colon, setColon] = useState(false);
   const [expands, setExpands] = useState(false);
   const [commentBox, setCommentBox] = useState(false);
+  // const [replies, setReplies] = useState([]);
+
   const colonRef = useRef(null);
   const textCount = 100;
   const dispatch = useDispatch();
@@ -76,6 +79,16 @@ function PostHome({ posts }) {
         .catch((err) => toast.error("Failed to copy URL"));
     }
   };
+  // const handleComment = (comment, parentId) => {
+  //   //...
+  //   if (parentId) {
+  //     // Add reply to the replies state
+  //     setReplies((prevReplies) => [...prevReplies, { comment, parentId }]);
+  //   } else {
+  //     // Add comment to the post comments
+  //     dispatch(newComment({ comment, postId: posts._id }));
+  //   }
+  // };
 
   return (
     <div className="card w-100 h p-2 bg-white mb-2">
@@ -233,15 +246,30 @@ function PostHome({ posts }) {
               <span className="action-count">{posts?.comments?.length}</span>
             </button>
 
-            <button className="action-btn share-btn" onClick={handleShare}>
+            <button
+              className="action-btn share-btn"
+              style={{ marginLeft: "520px" }}
+              onClick={handleShare}
+            >
               <FaRegPaperPlane />
             </button>
           </div>
 
-          {commentBox && <CreateComent postId={posts?._id} />}
+          {/* {commentBox && <CreateComent postId={posts?._id} />} */}
         </div>
       </div>
+      {/* <div className="comments">
+        {posts.comments.map((comment) => (
+          <Comment
+            key={comment._id}
+            comment={comment}
+            replies={replies.filter((reply) => reply.parentId === comment._id)}
+            onReply={(parentId) => handleComment("", parentId)}
+          />
+        ))}
+      </div> */}
       {commentBox && <CreateComent postId={posts?._id} />}
+      {/* <button onClick={() => setCommentBox(!commentBox)}>Comment</button> */}
     </div>
   );
 }

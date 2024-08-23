@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Fragment>
       <div className="banner-home">
-        <p>Welcome to Aspin Techonology</p>
+        <p>Welcome to AmbiSpine Techonology</p>
         <h1>FIND ACCESS BELOW</h1>
 
         <a href="#container">

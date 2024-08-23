@@ -12,7 +12,7 @@ const ProfileCard = () => {
 
   return (
     <div className="profile-container">
-      <div className="card m-3" style={{ height: "85vh" }}>
+      <div className="card m-3" style={{ height: "88vh" }}>
         <div className="card-headers">
           <div className="background-imag">
             <img
@@ -59,7 +59,7 @@ const ProfileCard = () => {
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#switchUserModal"
-              style={{ height: "25px" }}
+              style={{ height: "30px" }}
             >
               Switch
             </button>
