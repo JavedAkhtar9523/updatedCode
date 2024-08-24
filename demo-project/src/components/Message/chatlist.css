@@ -66,6 +66,9 @@
     font-size: 1.5rem; /* Larger icon */
     color: #007bff; /* Primary color for the icon */
   }
+.msgtoggle{
+  outline: none !important;
+}
   
 .msgtoggle:hover{
   background-color: #0ebac5;

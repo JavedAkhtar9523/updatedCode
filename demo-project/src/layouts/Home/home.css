@@ -1,4 +1,4 @@
-.banner-home{
+/* .banner-home{
     background-color: #0096FF;
     height: 100vmin;
     display: flex;
@@ -7,14 +7,31 @@
     justify-content: center;
     color: white;
     width:100%;
+} */
+.banner-home {
+    background-image: url('../../assets/AmbiSpine\ logo.png'); /* Replace with the actual path to your image */
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    position: relative; /* Ensure the position is set for the pseudo-element to work */
 }
 .banner-home >h1{
     margin: 5vmax;
     font-size: 600 2.5vmax "Roboto";
     background-color: transparent;
+    /* color: #FB9902; */
+    /* margin-bottom: 290px; */
 }
 .banner-home >P{
     font-size: 300 1.4vmax "Lucida Sans";
+    /* margin-bottom: 250px; */
 }
 .banner-home>a>button{
     margin-bottom: 5vmax;

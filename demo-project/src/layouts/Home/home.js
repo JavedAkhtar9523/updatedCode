@@ -11,7 +11,7 @@ const Home = () => {
         <h1>FIND ACCESS BELOW</h1>
 
         <a href="#container">
-          <button>
+          <button style={{ backgroundColor: "#0247FE", color: "white" }}>
             Scroll <CgMouse />
           </button>
         </a>

@@ -142,7 +142,7 @@ function App() {
               <Route path="/following" element={<Following />} />
             </Route>
 
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<Navigate to="/home" replace />} />
             <Route path="/admin" element={<AdminLogin />} />
             <Route path="/admin/dashboard" element={<Dashboard />} />
             <Route path="/admin/chat-management" element={<ChatManagement />} />

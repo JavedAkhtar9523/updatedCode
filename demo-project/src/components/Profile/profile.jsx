@@ -261,13 +261,26 @@ const Profile = ({ scrollableContentRef }) => {
                     <div className="profile-btn float-end">
                       <NavLink
                         to={`/profile/info/${user?._id}`}
-                        className="btn btn-warning rounded-5 btn-sm me-4"
+                        className="btn"
+                        style={{
+                          color: "white",
+                          padding: "5px 38px",
+                          backgroundColor: "#0080FF",
+                          borderRadius: "4px",
+                          marginRight: "19px",
+                        }}
                       >
                         Info
                       </NavLink>
                       <NavLink
                         to="/me/update"
-                        className="btn btn-secondary btn-sm p-1  rounded-5 me-4"
+                        className="btn"
+                        style={{
+                          color: "white",
+                          padding: "5px 14px",
+                          backgroundColor: "#0080FF",
+                          borderRadius: "4px",
+                        }}
                       >
                         Edit Profile
                       </NavLink>
