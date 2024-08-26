@@ -15,7 +15,7 @@ const Spread_News = () => {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   ];
 
-  const previewCount = 3;
+  const previewCount = 5;
 
   return (
     <div className="card" style={{ width: "90%" }}>

@@ -2,7 +2,8 @@
 
 header {
     width: 100%;
-    border-bottom: 1px solid #ececec;
+    /* border-bottom: 2px solid #ececec; */
+    border-bottom: 2px solid #c1bfbf;
     gap: 2rem;
     position: sticky;
     top: 0;

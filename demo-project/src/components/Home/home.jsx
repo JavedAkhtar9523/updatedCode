@@ -56,13 +56,16 @@ const HomePageComponent = ({ scrollableContentRef }) => {
   return (
     <div className="container-fluid " style={{ backgroundColor: "whitesmoke" }}>
       <div className="row">
-        <div className="col-3">
+        <div className="col-3" style={{ borderRight: "2px solid #c1bfbf" }}>
           <div className="home-left d-flex flex-column justify-content-center align-items-center">
             <ProfileCard />
           </div>
         </div>
         <div className="col-6 scrollable-content" ref={scrollableContentRef}>
-          <div className="d-flex gap-5">
+          <div
+            className="d-flex gap-5"
+            style={{ justifyContent: "space-around" }}
+          >
             <div onClick={StoryClick} className="position-relative">
               <div className="person person-1">
                 <img src="person.jpeg" alt="" className="img-1" />
@@ -76,14 +79,14 @@ const HomePageComponent = ({ scrollableContentRef }) => {
                 <StoryUserCarousel />
               </div>
             )}
-            {/* <div>
+            <div>
               <div className="person person-1">
                 <img src="person.jpeg" alt="" className="img-1" />
                 <img src="person.jpeg" alt="" className="img-2" />
                 <span>20k</span>
               </div>
               <p>Audio Room</p>
-            </div> */}
+            </div>
             <div>
               <div className="person person-1">
                 <img src="person.jpeg" alt="" className="img-1" />
@@ -110,7 +113,7 @@ const HomePageComponent = ({ scrollableContentRef }) => {
             ))}
           </div>
         </div>
-        <div className="col-3 mt-2">
+        <div className="col-3 p-3" style={{ borderLeft: "2px solid #c1bfbf" }}>
           <div className="home-right d-flex flex-column justify-content-center align-items-center">
             <FollowCard data={users?.other} />
             <Spread_News />

@@ -4,6 +4,7 @@ import { IoIosAddCircleOutline, IoMdWifi } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import CreatePost from "../../components/Post/Create-Post/CreatePost.jsx";
 import EventCard from "../../components/Event/EventCard";
+import { BsFillCheckCircleFill, BsPlusCircleDotted } from "react-icons/bs";
 import "./profile.css";
 import { useSelector } from "react-redux";
 
@@ -41,7 +42,10 @@ const ProfileCard = () => {
                   <h4 className="fs-6 text-secondary">
                     {user?.firstName} {user?.lastName}
                   </h4>
-                  <VscVerifiedFilled className="circle-icons text-primary fs-6" />
+                  <BsFillCheckCircleFill
+                    className="circle-icons  fs-6"
+                    style={{ color: "rgb(77, 191, 236)" }}
+                  />
                 </div>
               </NavLink>
               <div className="badge text-bg-light">

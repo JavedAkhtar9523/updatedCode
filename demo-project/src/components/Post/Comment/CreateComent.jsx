@@ -126,3 +126,50 @@ const CreateComment = ({ postId, parentCommentId = null }) => {
 };
 
 export default CreateComment;
+
+// import React, { useState } from "react";
+// import { useDispatch } from "react-redux";
+// // import { newComment } from "../../actions/postAction.js";
+// import { toast } from "react-toastify";
+// import { newComment } from "../../../actions/postAction.js";
+
+// function CreateComment({ postId, onNewComment }) {
+//   const [commentText, setCommentText] = useState("");
+//   const dispatch = useDispatch();
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     if (commentText.trim() === "") return;
+
+//     const newCommentData = {
+//       text: commentText,
+//       postId,
+//     };
+
+//     try {
+//       const response = await dispatch(newComment(newCommentData));
+//       onNewComment(response); // Notify parent of the new comment
+//       setCommentText("");
+//       toast.success("Comment posted successfully!");
+//     } catch (error) {
+//       toast.error("Failed to post comment");
+//     }
+//   };
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <textarea
+//         value={commentText}
+//         onChange={(e) => setCommentText(e.target.value)}
+//         placeholder="Write a comment..."
+//         rows="3"
+//         style={{ width: "100%", padding: "8px", marginTop: "8px" }}
+//       />
+//       <button type="submit" className="btn btn-primary mt-2">
+//         Post Comment
+//       </button>
+//     </form>
+//   );
+// }
+
+// export default CreateComment;

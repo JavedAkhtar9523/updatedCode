@@ -142,6 +142,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./header.css";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { FaBriefcase, FaUserFriends, FaHome } from "react-icons/fa";
+import { RiHome4Line } from "react-icons/ri";
 // import { FaHome } from "react-icons/fa";
 import Notification from "../../components/Notification/notification";
 import { Link, NavLink } from "react-router-dom";
@@ -248,31 +249,51 @@ const Header = ({ toggleOpen }) => {
 
       <div className="left-icons">
         <nav className="d-flex gap-4">
-          <div>
+          <div
+            style={{
+              backgroundColor: "#e9e7e7",
+              borderRadius: "50%",
+              padding: "6px",
+            }}
+          >
             <NavLink
               to="/home"
               className="d-flex justify-content-center text-decoration-none text-center flex-column align-items-center"
             >
-              <FaHome className="icon" />
+              <RiHome4Line className="icon" style={{ fontSize: "24px" }} />
             </NavLink>
           </div>
-          <div>
+          <div
+            style={{
+              backgroundColor: "#e9e7e7",
+              borderRadius: "50%",
+              padding: "6px",
+            }}
+          >
             <NavLink
               to="/connected"
               className="d-flex justify-content-center text-decoration-none text-center flex-column align-items-center"
             >
-              <FaUserFriends className="icon" />
+              <FaUserFriends className="icon" style={{ fontSize: "24px" }} />
             </NavLink>
           </div>
           <div
             className="h-notification position-relative"
             onClick={handleNotificationToggle}
+            style={{
+              backgroundColor: "#e9e7e7",
+              borderRadius: "50%",
+              padding: "6px",
+            }}
           >
             <NavLink
               to="#"
               className="d-flex text-decoration-none text-center justify-content-center flex-column align-items-center"
             >
-              <IoNotificationsOutline className="icon" />
+              <IoNotificationsOutline
+                className="icon"
+                style={{ fontSize: "24px" }}
+              />
             </NavLink>
             {notifications?.length > 0 && (
               <span className="notification-badge">{notifications.length}</span>
@@ -283,12 +304,18 @@ const Header = ({ toggleOpen }) => {
               <Notification />
             </div>
           )}
-          <div>
+          <div
+            style={{
+              backgroundColor: "#e9e7e7",
+              borderRadius: "50%",
+              padding: "6px",
+            }}
+          >
             <NavLink
               to="/job"
               className="d-flex justify-content-center text-decoration-none text-center flex-column align-items-center"
             >
-              <FaBriefcase className="icon" />
+              <FaBriefcase className="icon" style={{ fontSize: "24px" }} />
             </NavLink>
           </div>
         </nav>

@@ -1,6 +1,7 @@
 import { VscVerifiedFilled } from "react-icons/vsc";
 import "./follow.css";
 import React, { useState } from "react";
+import { BsFillCheckCircleFill } from "react-icons/bs";
 
 const ProfileCards = ({ profile }) => {
   const { avatar, firstName, lastName, username, email } = profile;
@@ -27,9 +28,9 @@ const ProfileCards = ({ profile }) => {
           <h4 style={{ fontSize: "0.8rem", margin: 0 }}>
             {firstName} {lastName}
           </h4>
-          <VscVerifiedFilled
-            className="text-primary ms-2 me-2"
-            style={{ fontSize: "0.9rem" }}
+          <BsFillCheckCircleFill
+            className=" ms-2 me-2"
+            style={{ fontSize: "0.9rem", color: "rgb(77, 191, 236)" }}
           />
         </div>
         <div className="d-flex justify-content-start">
